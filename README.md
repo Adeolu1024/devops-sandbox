@@ -42,7 +42,7 @@ Developer / Reviewer
 From a fresh VM:
 
 ```bash
-git clone <your-public-repo-url> devops-sandbox
+git clone https://github.com/Adeolu1024/devops-sandbox.git devops-sandbox
 cd devops-sandbox
 cp .env.example .env
 make up
