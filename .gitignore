@@ -1,0 +1,12 @@
+.env
+envs/*
+!envs/.gitkeep
+logs/*
+!logs/.gitkeep
+nginx/conf.d/*.conf
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+MENTOR_NOTES.md
+RUN_LOCAL_WSL.md
