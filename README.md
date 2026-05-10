@@ -64,6 +64,22 @@ curl -H "Host: env-xxxxxxxx.localhost" http://localhost:8080/
 curl -H "Host: env-xxxxxxxx.localhost" http://localhost:8080/health
 ```
 
+## Live VM Access
+
+The current demo VM is reachable at:
+
+```text
+http://98.82.168.197:8080
+```
+
+Environment routes are selected by Nginx using the `Host` header. Replace `<env-id>` with the active environment ID shown by `make create` or `GET /envs`:
+
+```bash
+curl -H "Host: <env-id>.localhost" http://98.82.168.197:8080/
+curl -H "Host: <env-id>.localhost" http://98.82.168.197:8080/health
+curl http://98.82.168.197:5000/envs
+```
+
 ## Full Demo Walkthrough
 
 1. Start the platform:
